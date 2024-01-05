@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geckows World</title>
+</head>
+<style>
+h1{color: white;
+    font-size: 35px;
+    margin: 20px;
+    text-align: 100px;
+    position: rel;
+    top: 5px;}
+h2{color: white;
+    font-size: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 45px;
+    text-align: px;
+    text-align: center;
+    }
+p{color: white;
+    font-size: 21px;
+    margin: 45px;
+    position:relative;
+    bottom: -30px;
+    text-align: center;
+    }
+button {
+    color: #ffffff;
+    padding: 8px 22px;
+    border-radius: 9px;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 98px;
+    transition: all 0.2s ease;
+    }
+button:active {
+        transform: scale(0.96)
+    } 
+button{
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+}
+button::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: #ffffff;
+    transition: 0.3s;
+    transition-timing-function: easy-in-out;
+    transform: scaleX(0)
+}
+button:hover::after
+{
+    transform: scaleX(1)}
+</style>
+
+<body background="background.png">
+
+<h1>My Personal Blog</h1>
+<h2>Hello Everyone!<br>I am Jekko Asong, 19 yrs. old</h2>
+<hr width="90%">
+<p>If you want to know more about me, click down below;</p>
+<button type="button" onclick="location.href='family.html'">
+    <img src="fam3.webp" height="215px" width="215px">
+</button>
+<button type="button" onclick="location.href='hobby.html'">
+    <img src="bike2.jpg" height="215px" width="215px" position="center">
+</button>
+<button type="button" onclick="location.href='skill.html'">
+    <img src="skill.png" height="215px" width="215px">
+</button>
+<button type="button" onclick="location.href='strength.html'">
+    <img src="laptop.jpg" height="215px" width="215px">
+</button>
+<button type="button" onclick="location.href='career.html'">
+    <img src="job.jpg" height="215px" width="215px">
+</button> 
+
+
+</body>
+</html>
